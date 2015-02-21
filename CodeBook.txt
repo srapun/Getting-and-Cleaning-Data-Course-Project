@@ -1,0 +1,74 @@
+ [1] "Subject"      INTEGER between [1,30]
+
+Gained from the files "subject_train.txt" and "subject_test.txt", identifies the subject whose activity the measures     are related to.
+
+ [2] "Activity"     String FACTOR
+
+            1 WALKING 
+            2 WALKING_UPSTAIRS 
+            3 WALKING_DOWNSTAIRS
+            4 SITTING
+            5 STANDING
+            6 LAYING                     
+
+The remaining variables contain the calculated mean values (NUMERIC, 9 Decimals).
+
+ [3] "Avg_fBodyAcc.mean.X"              
+ [4] "Avg_fBodyAcc.mean.Y"               "Avg_fBodyAcc.mean.Z"               "Avg_fBodyAcc.meanFreq.X"          
+ [7] "Avg_fBodyAcc.meanFreq.Y"           "Avg_fBodyAcc.meanFreq.Z"           "Avg_fBodyAcc.std.X"               
+[10] "Avg_fBodyAcc.std.Y"                "Avg_fBodyAcc.std.Z"                "Avg_fBodyAccJerk.mean.X"          
+[13] "Avg_fBodyAccJerk.mean.Y"           "Avg_fBodyAccJerk.mean.Z"           "Avg_fBodyAccJerk.meanFreq.X"      
+[16] "Avg_fBodyAccJerk.meanFreq.Y"       "Avg_fBodyAccJerk.meanFreq.Z"       "Avg_fBodyAccJerk.std.X"           
+[19] "Avg_fBodyAccJerk.std.Y"            "Avg_fBodyAccJerk.std.Z"            "Avg_fBodyAccMag.mean"             
+[22] "Avg_fBodyAccMag.meanFreq"          "Avg_fBodyAccMag.std"               "Avg_fBodyBodyAccJerkMag.mean"     
+[25] "Avg_fBodyBodyAccJerkMag.meanFreq"  "Avg_fBodyBodyAccJerkMag.std"       "Avg_fBodyBodyGyroJerkMag.mean"    
+[28] "Avg_fBodyBodyGyroJerkMag.meanFreq" "Avg_fBodyBodyGyroJerkMag.std"      "Avg_fBodyBodyGyroMag.mean"        
+[31] "Avg_fBodyBodyGyroMag.meanFreq"     "Avg_fBodyBodyGyroMag.std"          "Avg_fBodyGyro.mean.X"             
+[34] "Avg_fBodyGyro.mean.Y"              "Avg_fBodyGyro.mean.Z"              "Avg_fBodyGyro.meanFreq.X"         
+[37] "Avg_fBodyGyro.meanFreq.Y"          "Avg_fBodyGyro.meanFreq.Z"          "Avg_fBodyGyro.std.X"              
+[40] "Avg_fBodyGyro.std.Y"               "Avg_fBodyGyro.std.Z"               "Avg_tBodyAcc.mean.X"              
+[43] "Avg_tBodyAcc.mean.Y"               "Avg_tBodyAcc.mean.Z"               "Avg_tBodyAcc.std.X"               
+[46] "Avg_tBodyAcc.std.Y"                "Avg_tBodyAcc.std.Z"                "Avg_tBodyAccJerk.mean.X"          
+[49] "Avg_tBodyAccJerk.mean.Y"           "Avg_tBodyAccJerk.mean.Z"           "Avg_tBodyAccJerk.std.X"           
+[52] "Avg_tBodyAccJerk.std.Y"            "Avg_tBodyAccJerk.std.Z"            "Avg_tBodyAccJerkMag.mean"         
+[55] "Avg_tBodyAccJerkMag.std"           "Avg_tBodyAccMag.mean"              "Avg_tBodyAccMag.std"              
+[58] "Avg_tBodyGyro.mean.X"              "Avg_tBodyGyro.mean.Y"              "Avg_tBodyGyro.mean.Z"             
+[61] "Avg_tBodyGyro.std.X"               "Avg_tBodyGyro.std.Y"               "Avg_tBodyGyro.std.Z"              
+[64] "Avg_tBodyGyroJerk.mean.X"          "Avg_tBodyGyroJerk.mean.Y"          "Avg_tBodyGyroJerk.mean.Z"         
+[67] "Avg_tBodyGyroJerk.std.X"           "Avg_tBodyGyroJerk.std.Y"           "Avg_tBodyGyroJerk.std.Z"          
+[70] "Avg_tBodyGyroJerkMag.mean"         "Avg_tBodyGyroJerkMag.std"          "Avg_tBodyGyroMag.mean"            
+[73] "Avg_tBodyGyroMag.std"              "Avg_tGravityAcc.mean.X"            "Avg_tGravityAcc.mean.Y"           
+[76] "Avg_tGravityAcc.mean.Z"            "Avg_tGravityAcc.std.X"             "Avg_tGravityAcc.std.Y"            
+[79] "Avg_tGravityAcc.std.Z"             "Avg_tGravityAccMag.mean"           "Avg_tGravityAccMag.std
+
+
+In order to know which initial variables listed in the features-file, the mean value was calculated for, please proceed in a similar way to the example: "Avg_fBodyAcc.mean.X -> "fBodyAcc-mean()-X
+or see the list of the corresponding initial variables from the features-file:
+
+ [1] "fBodyAcc-mean()-X"               "fBodyAcc-mean()-Y"               "fBodyAcc-mean()-Z"              
+ [4] "fBodyAcc-meanFreq()-X"           "fBodyAcc-meanFreq()-Y"           "fBodyAcc-meanFreq()-Z"          
+ [7] "fBodyAcc-std()-X"                "fBodyAcc-std()-Y"                "fBodyAcc-std()-Z"               
+[10] "fBodyAccJerk-mean()-X"           "fBodyAccJerk-mean()-Y"           "fBodyAccJerk-mean()-Z"          
+[13] "fBodyAccJerk-meanFreq()-X"       "fBodyAccJerk-meanFreq()-Y"       "fBodyAccJerk-meanFreq()-Z"      
+[16] "fBodyAccJerk-std()-X"            "fBodyAccJerk-std()-Y"            "fBodyAccJerk-std()-Z"           
+[19] "fBodyAccMag-mean()"              "fBodyAccMag-meanFreq()"          "fBodyAccMag-std()"              
+[22] "fBodyBodyAccJerkMag-mean()"      "fBodyBodyAccJerkMag-meanFreq()"  "fBodyBodyAccJerkMag-std()"      
+[25] "fBodyBodyGyroJerkMag-mean()"     "fBodyBodyGyroJerkMag-meanFreq()" "fBodyBodyGyroJerkMag-std()"     
+[28] "fBodyBodyGyroMag-mean()"         "fBodyBodyGyroMag-meanFreq()"     "fBodyBodyGyroMag-std()"         
+[31] "fBodyGyro-mean()-X"              "fBodyGyro-mean()-Y"              "fBodyGyro-mean()-Z"             
+[34] "fBodyGyro-meanFreq()-X"          "fBodyGyro-meanFreq()-Y"          "fBodyGyro-meanFreq()-Z"         
+[37] "fBodyGyro-std()-X"               "fBodyGyro-std()-Y"               "fBodyGyro-std()-Z"              
+[40] "tBodyAcc-mean()-X"               "tBodyAcc-mean()-Y"               "tBodyAcc-mean()-Z"              
+[43] "tBodyAcc-std()-X"                "tBodyAcc-std()-Y"                "tBodyAcc-std()-Z"               
+[46] "tBodyAccJerk-mean()-X"           "tBodyAccJerk-mean()-Y"           "tBodyAccJerk-mean()-Z"          
+[49] "tBodyAccJerk-std()-X"            "tBodyAccJerk-std()-Y"            "tBodyAccJerk-std()-Z"           
+[52] "tBodyAccJerkMag-mean()"          "tBodyAccJerkMag-std()"           "tBodyAccMag-mean()"             
+[55] "tBodyAccMag-std()"               "tBodyGyro-mean()-X"              "tBodyGyro-mean()-Y"             
+[58] "tBodyGyro-mean()-Z"              "tBodyGyro-std()-X"               "tBodyGyro-std()-Y"              
+[61] "tBodyGyro-std()-Z"               "tBodyGyroJerk-mean()-X"          "tBodyGyroJerk-mean()-Y"         
+[64] "tBodyGyroJerk-mean()-Z"          "tBodyGyroJerk-std()-X"           "tBodyGyroJerk-std()-Y"          
+[67] "tBodyGyroJerk-std()-Z"           "tBodyGyroJerkMag-mean()"         "tBodyGyroJerkMag-std()"         
+[70] "tBodyGyroMag-mean()"             "tBodyGyroMag-std()"              "tGravityAcc-mean()-X"           
+[73] "tGravityAcc-mean()-Y"            "tGravityAcc-mean()-Z"            "tGravityAcc-std()-X"            
+[76] "tGravityAcc-std()-Y"             "tGravityAcc-std()-Z"             "tGravityAccMag-mean()"          
+[79] "tGravityAccMag-std()
