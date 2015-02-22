@@ -2,7 +2,7 @@
 
 Gained from the files "subject_train.txt" and "subject_test.txt", identifies the subject whose activity the measures     are related to.
 
- [2] "Activity"     String FACTOR
+ [2] "Activity"     FACTOR
 
             1 WALKING 
             2 WALKING_UPSTAIRS 
